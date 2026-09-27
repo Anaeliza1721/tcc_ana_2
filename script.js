@@ -1,19 +1,4 @@
-/* =========================================================
-   ISTôligado - script.js
-   Este arquivo contém toda a lógica de interatividade do site:
-   - menu responsivo (hambúrguer)
-   - navegação entre seções
-   - cards expansíveis das ISTs
-   - quiz educativo com pontuação
-   - mitos e verdades
-   - autoavaliação de risco com cálculo de resultado
-   O código foi dividido em funções pequenas e comentadas
-   para facilitar o entendimento e a apresentação no TCC.
-   ========================================================= */
 
-/* ---------------------------------------------------------
-   1. MENU RESPONSIVO (HAMBÚRGUER)
-   --------------------------------------------------------- */
 function iniciarMenu() {
   const botaoMenu = document.getElementById("botao-menu");
   const menu = document.getElementById("menu-principal");
