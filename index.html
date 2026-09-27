@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISTôligado - Informação também é prevenção</title>
+  <meta name="description" content="ISTôligado é uma plataforma educativa sobre Infecções Sexualmente Transmissíveis (ISTs) voltada para adolescentes." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="pular-link">Pular para o conteúdo</a>
+
+  <!-- =========================================================
+       CABEÇALHO E MENU DE NAVEGAÇÃO
+       ========================================================= -->
+  <header class="cabecalho">
+    <nav class="barra-nav">
+      <a href="#" class="marca" data-secao="inicio">
+        <span class="logo-emoji">💬</span>
+        ISTôligado
+      </a>
+
+      <button class="menu-hamburguer" id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu-principal" id="menu-principal">
+        <li><a href="#" data-secao="inicio">Início</a></li>
+        <li><a href="#" data-secao="ists">Conheça as ISTs</a></li>
+        <li><a href="#" data-secao="prevencao">Prevenção</a></li>
+        <li><a href="#" data-secao="quiz">Quiz</a></li>
+        <li><a href="#" data-secao="mitos">Mitos e Verdades</a></li>
+        <li><a href="#" data-secao="autoavaliacao">Autoavaliação</a></li>
+        <li><a href="#" data-secao="ajuda">Onde buscar ajuda</a></li>
+        <li><a href="#" data-secao="referencias">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- =========================================================
+         SEÇÃO: INÍCIO
+         ========================================================= -->
+    <section id="inicio" class="secao-app secao hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <h1>ISTô<span class="hero-destaque">ligado</span></h1>
+          <p class="hero-frase">"Informação também é prevenção."</p>
+          <p>
+            O <strong>ISTôligado</strong> é uma plataforma educativa criada para ajudar
+            adolescentes a entenderem melhor o que são as Infecções Sexualmente
+            Transmissíveis (ISTs), como se prevenir, reconhecer sinais de atenção e
+            saber onde buscar orientação profissional.
+          </p>
+          <p>
+            Conhecer as ISTs ajuda a adotar medidas de prevenção no dia a dia e a
+            procurar atendimento de saúde sempre que necessário.
+          </p>
+
+          <div class="botoes-hero">
+            <a href="#" class="botao botao-primario" data-secao="ists">Conheça as ISTs</a>
+            <a href="#" class="botao botao-secundario" data-secao="prevencao">Prevenção</a>
+            <a href="#" class="botao botao-destaque" data-secao="autoavaliacao">Faça a autoavaliação</a>
+            <a href="#" class="botao botao-secundario" data-secao="quiz">Teste seus conhecimentos</a>
+          </div>
+        </div>
+
+        <div class="hero-ilustracao">
+          <svg viewBox="0 0 260 260" width="260" height="260" role="img" aria-label="Ilustração de um coração com um símbolo de proteção">
+            <circle cx="130" cy="130" r="120" fill="#e7f5f3"></circle>
+            <path d="M130 190 C 60 150, 55 90, 100 70 C 120 62, 130 78, 130 90 C 130 78, 140 62, 160 70 C 205 90, 200 150, 130 190 Z" fill="#ff6f61"></path>
+            <circle cx="130" cy="120" r="46" fill="#ffffff" opacity="0.9"></circle>
+            <text x="130" y="132" font-size="42" text-anchor="middle" font-family="Arial" fill="#1d7a74">✓</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grade-acessos">
+          <button class="cartao-acesso" data-secao-click="ists">
+            <span class="icone">🦠</span>
+            <h3>Conheça as ISTs</h3>
+            <p>Informações resumidas sobre HIV, sífilis, gonorreia, HPV e herpes genital.</p>
+          </button>
+          <button class="cartao-acesso" data-secao-click="prevencao">
+            <span class="icone">🛡️</span>
+            <h3>Prevenção</h3>
+            <p>Preservativo, testagem, vacinação e outras formas de se proteger.</p>
+          </button>
+          <button class="cartao-acesso" data-secao-click="autoavaliacao">
+            <span class="icone">📋</span>
+            <h3>Autoavaliação</h3>
+            <p>Reflita sobre situações de exposição de forma educativa.</p>
+          </button>
+          <button class="cartao-acesso" data-secao-click="quiz">
+            <span class="icone">🧠</span>
+            <h3>Teste seus conhecimentos</h3>
+            <p>Um quiz rápido para reforçar o que você aprendeu.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: CONHEÇA AS ISTs
+         ========================================================= -->
+    <section id="ists" class="secao-app secao oculto">
+      <div class="container">
+        <h2 class="titulo-secao">Conheça as ISTs</h2>
+        <p class="subtitulo-secao">
+          Informações resumidas sobre as principais Infecções Sexualmente
+          Transmissíveis. Clique em "Saiba mais" para ver mais detalhes de cada uma.
+        </p>
+
+        <div class="grade-ists">
+
+          <!-- HIV -->
+          <article class="cartao-ist">
+            <div class="cartao-ist-cabecalho">
+              <span class="icone">🩸</span>
+              <h3>HIV</h3>
+            </div>
+            <div class="cartao-ist-corpo">
+              <p><strong>O que é:</strong> vírus que ataca o sistema imunológico e pode evoluir para a aids se não for tratado.</p>
+              <button class="botao-saiba-mais">Saiba mais +</button>
+              <div class="detalhes-ist">
+                <h4>Transmissão</h4>
+                <p>Relação sexual sem preservativo, contato com sangue contaminado e de mãe para filho na gestação, parto ou amamentação.</p>
+                <h4>Sinais e sintomas</h4>
+                <p>Nas fases iniciais pode não causar sintomas visíveis. Por isso a testagem regular é essencial.</p>
+                <h4>Prevenção</h4>
+                <p>Uso de preservativo, PrEP (quando indicada por profissional de saúde) e testagem regular.</p>
+                <h4>Testagem e tratamento</h4>
+                <p>Feita em unidades de saúde. O tratamento (antirretroviral) permite qualidade de vida e reduz a transmissão.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sífilis -->
+          <article class="cartao-ist">
+            <div class="cartao-ist-cabecalho">
+              <span class="icone">🔬</span>
+              <h3>Sífilis</h3>
+            </div>
+            <div class="cartao-ist-corpo">
+              <p><strong>O que é:</strong> infecção bacteriana que evolui em fases e pode afetar todo o corpo se não for tratada.</p>
+              <button class="botao-saiba-mais">Saiba mais +</button>
+              <div class="detalhes-ist">
+                <h4>Transmissão</h4>
+                <p>Principalmente por relação sexual sem preservativo; também pode ser transmitida de mãe para filho na gestação.</p>
+                <h4>Sinais e sintomas</h4>
+                <p>Ferida indolor na fase inicial, que pode desaparecer sozinha, seguida de outros sinais nas fases seguintes.</p>
+                <h4>Prevenção</h4>
+                <p>Uso de preservativo e testagem regular, especialmente durante o pré-natal.</p>
+                <h4>Testagem e tratamento</h4>
+                <p>Diagnóstico por exame de sangue; tratamento simples e eficaz com antibiótico, indicado por profissional de saúde.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gonorreia -->
+          <article class="cartao-ist">
+            <div class="cartao-ist-cabecalho">
+              <span class="icone">💊</span>
+              <h3>Gonorreia</h3>
+            </div>
+            <div class="cartao-ist-corpo">
+              <p><strong>O que é:</strong> infecção bacteriana que afeta principalmente as vias urinárias e genitais.</p>
+              <button class="botao-saiba-mais">Saiba mais +</button>
+              <div class="detalhes-ist">
+                <h4>Transmissão</h4>
+                <p>Relação sexual sem preservativo (vaginal, anal ou oral).</p>
+                <h4>Sinais e sintomas</h4>
+                <p>Corrimento, dor ou ardência ao urinar; em muitos casos pode não apresentar sintomas.</p>
+                <h4>Prevenção</h4>
+                <p>Uso de preservativo em todas as relações sexuais.</p>
+                <h4>Testagem e tratamento</h4>
+                <p>Diagnóstico clínico e laboratorial; tratamento com antibióticos prescritos por profissional de saúde.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- HPV -->
+          <article class="cartao-ist">
+            <div class="cartao-ist-cabecalho">
+              <span class="icone">🧬</span>
+              <h3>HPV</h3>
+            </div>
+            <div class="cartao-ist-corpo">
+              <p><strong>O que é:</strong> vírus muito comum, com diversos tipos, alguns relacionados a verrugas e outros a câncer.</p>
+              <button class="botao-saiba-mais">Saiba mais +</button>
+              <div class="detalhes-ist">
+                <h4>Transmissão</h4>
+                <p>Contato pele a pele durante a relação sexual, mesmo sem penetração.</p>
+                <h4>Sinais e sintomas</h4>
+                <p>Pode não causar sintomas, ou apresentar verrugas genitais visíveis.</p>
+                <h4>Prevenção</h4>
+                <p>Vacinação (disponível gratuitamente para adolescentes no calendário nacional), uso de preservativo e exames preventivos.</p>
+                <h4>Testagem e tratamento</h4>
+                <p>Exames como o preventivo (Papanicolau) ajudam na detecção precoce de alterações causadas pelo HPV.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Herpes genital -->
+          <article class="cartao-ist">
+            <div class="cartao-ist-cabecalho">
+              <span class="icone">🌿</span>
+              <h3>Herpes genital</h3>
+            </div>
+            <div class="cartao-ist-corpo">
+              <p><strong>O que é:</strong> infecção viral que pode causar lesões (bolhas) na região genital.</p>
+              <button class="botao-saiba-mais">Saiba mais +</button>
+              <div class="detalhes-ist">
+                <h4>Transmissão</h4>
+                <p>Contato direto com a pele ou mucosa durante a relação sexual, inclusive na ausência de lesões visíveis.</p>
+                <h4>Sinais e sintomas</h4>
+                <p>Bolhas ou feridas dolorosas na região genital, que podem reaparecer ao longo do tempo.</p>
+                <h4>Prevenção</h4>
+                <p>Uso de preservativo (reduz, mas não elimina totalmente o risco) e evitar contato durante crises ativas.</p>
+                <h4>Testagem e tratamento</h4>
+                <p>Diagnóstico clínico; não tem cura definitiva, mas o tratamento com antivirais ajuda a controlar os sintomas.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: PREVENÇÃO
+         ========================================================= -->
+    <section id="prevencao" class="secao-app secao secao-alt oculto">
+      <div class="container">
+        <h2 class="titulo-secao">Prevenção</h2>
+        <p class="subtitulo-secao">
+          Pequenas atitudes fazem grande diferença na prevenção das ISTs.
+        </p>
+
+        <div class="grade-prevencao">
+          <div class="cartao-prevencao">
+            <span class="icone">🧴</span>
+            <h3>Uso de preservativos</h3>
+            <p>O preservativo (masculino ou feminino), quando usado corretamente em todas as relações, é uma das formas mais eficazes de prevenção.</p>
+          </div>
+          <div class="cartao-prevencao">
+            <span class="icone">🧪</span>
+            <h3>Testagem</h3>
+            <p>Fazer exames regularmente ajuda a identificar infecções mesmo sem sintomas, permitindo tratamento precoce.</p>
+          </div>
+          <div class="cartao-prevencao">
+            <span class="icone">💉</span>
+            <h3>Vacinação</h3>
+            <p>Vacinas como a do HPV e da hepatite B protegem contra ISTs específicas e estão disponíveis na rede pública.</p>
+          </div>
+          <div class="cartao-prevencao">
+            <span class="icone">💬</span>
+            <h3>Comunicação com o parceiro(a)</h3>
+            <p>Conversar abertamente sobre prevenção e testagem fortalece o cuidado mútuo nas relações.</p>
+          </div>
+          <div class="cartao-prevencao">
+            <span class="icone">📚</span>
+            <h3>Informações confiáveis</h3>
+            <p>Buscar fontes confiáveis, como Ministério da Saúde e OMS, evita mitos e decisões baseadas em informações erradas.</p>
+          </div>
+          <div class="cartao-prevencao">
+            <span class="icone">🏥</span>
+            <h3>Serviços de saúde</h3>
+            <p>Unidades básicas de saúde oferecem orientação, testagem e tratamento gratuitos e sigilosos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: QUIZ
+         ========================================================= -->
+    <section id="quiz" class="secao-app secao oculto">
+      <div class="container">
+        <h2 class="titulo-secao">Teste seus conhecimentos</h2>
+        <p class="subtitulo-secao">
+          Responda ao quiz e veja o quanto você já sabe sobre ISTs e prevenção.
+        </p>
+
+        <div class="caixa-quiz">
+          <!-- Tela inicial do quiz -->
+          <div id="quiz-inicio">
+            <p>O quiz tem 8 perguntas de múltipla escolha, com explicação educativa após cada resposta.</p>
+            <button id="botao-iniciar-quiz" class="botao botao-primario botao-bloco">Começar quiz</button>
+          </div>
+
+          <!-- Container das perguntas -->
+          <div id="quiz-pergunta-container" class="oculto">
+            <p class="quiz-progresso" id="quiz-progresso"></p>
+            <p class="quiz-pergunta" id="quiz-pergunta"></p>
+            <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            <div class="quiz-feedback" id="quiz-feedback"></div>
+            <div class="quiz-rodape">
+              <button id="botao-proxima-pergunta" class="botao botao-primario oculto">Próxima pergunta</button>
+            </div>
+          </div>
+
+          <!-- Resultado final -->
+          <div id="quiz-resultado" class="quiz-resultado oculto">
+            <h3>Resultado</h3>
+            <p class="pontuacao-final" id="quiz-pontuacao-final"></p>
+            <p id="quiz-mensagem-final"></p>
+            <p class="aviso-resultado">Este quiz é apenas educativo e não substitui uma avaliação médica.</p>
+            <button id="botao-refazer-quiz" class="botao botao-secundario">Refazer quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: MITOS E VERDADES
+         ========================================================= -->
+    <section id="mitos" class="secao-app secao secao-alt oculto">
+      <div class="container">
+        <h2 class="titulo-secao">Mitos e Verdades</h2>
+        <p class="subtitulo-secao">Clique em cada card para descobrir se a afirmação é mito ou verdade.</p>
+
+        <div class="grade-mitos">
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta verdade">VERDADE</span>
+            <p class="afirmacao">"É possível ter uma IST sem apresentar sintomas."</p>
+            <p class="explicacao-mito">Muitas ISTs, como clamídia e algumas fases da sífilis, podem não causar sintomas visíveis, por isso a testagem é importante.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta mito">MITO</span>
+            <p class="afirmacao">"Tomar banho ou fazer higiene íntima logo após a relação evita ISTs."</p>
+            <p class="explicacao-mito">A higiene é importante para a saúde, mas não impede a transmissão de ISTs. A forma eficaz de prevenção é o uso correto do preservativo.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta mito">MITO</span>
+            <p class="afirmacao">"Só quem tem vários parceiros sexuais pode pegar uma IST."</p>
+            <p class="explicacao-mito">Basta uma relação sexual sem proteção com uma pessoa infectada para haver risco de transmissão, independentemente do número de parceiros.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta verdade">VERDADE</span>
+            <p class="afirmacao">"A vacina contra o HPV é indicada para adolescentes e está disponível na rede pública."</p>
+            <p class="explicacao-mito">O calendário nacional de vacinação inclui a vacina contra o HPV para adolescentes, ajudando a prevenir alguns tipos do vírus.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta mito">MITO</span>
+            <p class="afirmacao">"O preservativo feminino é menos eficaz que o masculino."</p>
+            <p class="explicacao-mito">Quando usado corretamente, o preservativo feminino também é eficaz na prevenção de ISTs e da gravidez.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta verdade">VERDADE</span>
+            <p class="afirmacao">"É possível transmitir uma IST mesmo no sexo oral."</p>
+            <p class="explicacao-mito">Algumas ISTs, como herpes, sífilis e gonorreia, também podem ser transmitidas por sexo oral sem proteção.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta mito">MITO</span>
+            <p class="afirmacao">"Se o resultado do teste for negativo uma vez, a pessoa nunca mais precisa se testar."</p>
+            <p class="explicacao-mito">A testagem deve ser repetida periodicamente, principalmente após novas exposições, já que o resultado reflete apenas o momento do exame.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+          <div class="cartao-mito" tabindex="0">
+            <span class="selo-resposta verdade">VERDADE</span>
+            <p class="afirmacao">"Conversar com o parceiro(a) sobre prevenção é uma atitude saudável."</p>
+            <p class="explicacao-mito">O diálogo aberto sobre prevenção, testagem e cuidado mútuo fortalece relações mais seguras e saudáveis.</p>
+            <p class="dica-clique">Clique para ver a resposta</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: AUTOAVALIAÇÃO
+         ========================================================= -->
+    <section id="autoavaliacao" class="secao-app secao oculto">
+      <div class="container caixa-autoavaliacao">
+        <h2 class="titulo-secao">Autoavaliação: conheça seus fatores de risco</h2>
+
+        <div class="aviso-importante">
+          <strong>Importante:</strong> esta autoavaliação é apenas educativa e não
+          substitui uma avaliação médica. As respostas não permitem confirmar ou
+          descartar uma IST. Em caso de dúvidas, sintomas ou situação de possível
+          exposição, procure um profissional ou serviço de saúde.
+        </div>
+
+        <!-- Formulário da autoavaliação -->
+        <form id="formulario-avaliacao">
+          <div id="lista-perguntas-avaliacao"><!-- Perguntas geradas via JavaScript --></div>
+          <p class="mensagem-formulario" id="mensagem-erro-avaliacao"></p>
+          <button type="submit" class="botao botao-primario botao-bloco">Ver resultado</button>
+        </form>
+
+        <!-- Resultado da autoavaliação -->
+        <div id="resultado-avaliacao" class="resultado-avaliacao oculto">
+          <h3>Resultado da autoavaliação</h3>
+          <p class="nivel-resultado" id="nivel-resultado-avaliacao"></p>
+          <p id="texto-resultado-avaliacao"></p>
+          <p class="aviso-resultado">Este resultado é educativo e não representa um diagnóstico médico.</p>
+          <button id="botao-refazer-avaliacao" class="botao botao-secundario">Refazer autoavaliação</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: ONDE BUSCAR AJUDA
+         ========================================================= -->
+    <section id="ajuda" class="secao-app secao secao-alt oculto">
+      <div class="container">
+        <h2 class="titulo-secao">Onde buscar ajuda</h2>
+        <p class="subtitulo-secao">
+          Diante de dúvidas, sintomas ou situações de possível exposição, procure
+          sempre um profissional ou serviço de saúde.
+        </p>
+
+        <div class="lista-ajuda">
+          <div class="item-ajuda">
+            <span class="icone">🏥</span>
+            <h3>Unidades Básicas de Saúde (UBS)</h3>
+            <p>Oferecem atendimento, orientação e testagem gratuitos, geralmente próximos da sua casa.</p>
+          </div>
+          <div class="item-ajuda">
+            <span class="icone">🧑‍⚕️</span>
+            <h3>Profissionais de saúde</h3>
+            <p>Médicos, enfermeiros e outros profissionais podem esclarecer dúvidas com sigilo e sem julgamentos.</p>
+          </div>
+          <div class="item-ajuda">
+            <span class="icone">🧫</span>
+            <h3>Serviços de testagem</h3>
+            <p>Centros de Testagem e Aconselhamento (CTA) realizam testes rápidos, muitas vezes de forma gratuita e sigilosa.</p>
+          </div>
+          <div class="item-ajuda">
+            <span class="icone">🏳️‍🌈</span>
+            <h3>Serviços especializados</h3>
+            <p>Em alguns casos, é possível ser encaminhado a serviços especializados para acompanhamento contínuo.</p>
+          </div>
+        </div>
+
+        <div class="aviso-ajuda">
+          <strong>Lembre-se:</strong> buscar ajuda é um ato de cuidado, não motivo
+          para vergonha. Quanto mais cedo a orientação for buscada, mais rápido é
+          possível esclarecer dúvidas e, se necessário, iniciar o tratamento adequado.
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO: REFERÊNCIAS
+         ========================================================= -->
+    <section id="referencias" class="secao-app secao oculto">
+      <div class="container">
+        <h2 class="titulo-secao">Referências e fontes confiáveis</h2>
+        <p class="subtitulo-secao">
+          Os conteúdos desta plataforma foram elaborados com base em fontes de
+          referência em saúde pública. Para aprofundar seus estudos, consulte:
+        </p>
+
+        <ul class="lista-referencias">
+          <li>Ministério da Saúde do Brasil — informações sobre ISTs, prevenção e tratamento (gov.br/saude).</li>
+          <li>Organização Mundial da Saúde (OMS) — dados globais sobre Infecções Sexualmente Transmissíveis (who.int).</li>
+          <li>Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis (DCCI/Ministério da Saúde).</li>
+          <li>Programa Nacional de Imunizações (PNI) — informações sobre a vacina contra o HPV.</li>
+          <li>Artigos científicos e materiais educativos de instituições de saúde e pesquisa reconhecidas.</li>
+        </ul>
+
+        <p class="subtitulo-secao" style="margin-top: 24px;">
+          Esta plataforma tem caráter educativo e foi desenvolvida como parte de um
+          Trabalho de Conclusão de Curso (TCC).
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       RODAPÉ
+       ========================================================= -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <h4>ISTôligado</h4>
+        <p>"Informação também é prevenção."</p>
+      </div>
+      <div>
+        <h4>Desenvolvedores:</h4>
+        <ul>
+          <li>Ana Eliza dos Santos</li>
+          <li>Laura Nascimento</li>
+          <li>Leticia França</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#" data-secao="ists">Conheça as ISTs</a></li>
+          <li><a href="#" data-secao="autoavaliacao">Autoavaliação</a></li>
+          <li><a href="#" data-secao="ajuda">Onde buscar ajuda</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape-baixo">
+      Projeto educativo desenvolvido como Trabalho de Conclusão de Curso (TCC).
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Faz os cards de acesso rápido da página inicial também navegarem entre seções
+    document.querySelectorAll("[data-secao-click]").forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        mostrarSecao(botao.getAttribute("data-secao-click"));
+      });
+    });
+  </script>
+</body>
+</html>
