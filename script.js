@@ -463,12 +463,17 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("botao-refazer-quiz").addEventListener("click", iniciarQuiz);
 
   // Autoavaliação
-  document
-    .getElementById("formulario-avaliacao")
-    .addEventListener("submit", calcularResultadoAvaliacao);
-  document
-    .getElementById("botao-refazer-avaliacao")
-    .addEventListener("click", refazerAvaliacao);
+ const formularioAvaliacao = document.getElementById("formulario-avaliacao");
+
+if (formularioAvaliacao) {
+    formularioAvaliacao.addEventListener("submit", calcularResultadoAvaliacao);
+}
+
+const botaoRefazer = document.getElementById("botao-refazer-avaliacao");
+
+if (botaoRefazer) {
+    botaoRefazer.addEventListener("click", refazerAvaliacao);
+}
 
   // Mostra a seção inicial por padrão
   mostrarSecao("inicio");
